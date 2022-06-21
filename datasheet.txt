@@ -1,0 +1,20 @@
+Decription of Datatypes for current release:
+
+relative_waves: [alpha, beta, gamma, delta, theta] - frequency band loudness in Bels converted to a normalized 0-1
+    Range = {0:1} normalized Bels 
+
+acc_xyz: [X, Y, Z] - Acclerometer data with moving average. 
+    Range = {-2:+2} milli-Gs.
+
+    X = forward and backward position, +ve points out from back of head
+    Y = up and down position, +ve points into the sky
+    Z = left and right position, +ve points into the head from the right side
+
+gyro_xyz: [X, Y, Z] - The amount of rotation from the last position the headband was in. This will always return to zero. 
+    Range = degrees/second {-245:+245}
+
+    X = forward and backward position, +ve points out from back of head
+    Y = up and down position, +ve points into the sky
+    Z = left and right position, +ve points into the head from the right side
+
+
